@@ -1,0 +1,75 @@
+/* Style umum */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* Tombol "Pesan Sekarang" */
+button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer; /* Menambahkan kursor pointer */
+    transition: background 0.3s, transform 0.3s; /* Efek transisi */
+    margin: 20px 0; /* Jarak antara gambar dan tombol */
+}
+
+button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+button:active {
+    transform: translate(0em, 0.2em);
+}
+
+/* Tombol WhatsApp */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp-button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #00bbff; /* Warna hijau WhatsApp */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none; /* Menghapus garis bawah */
+    transition: background 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.whatsapp-button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.whatsapp-button:active {
+    transform: translate(0em, 0.2em);
+}
