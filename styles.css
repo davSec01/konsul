@@ -10,38 +10,41 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto; /* Menyesuaikan tinggi kontainer */
     justify-content: center;
+    overflow: hidden; /* Menghindari overflow gambar */
 }
 
 .image-container img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    max-width: 100vw;  /* Mengatur lebar maksimum gambar */
+    max-height: 105vh;  /* Membuat gambar sesuai dengan viewport */
+    object-fit: cover; /* Menjaga rasio aspek gambar */
     margin-bottom: 0;
 }
 
-/* Tombol "Pesan Sekarang" */
+/* Style Tombol "Pesan Sekarang" */
 button {
-    font-size: 17px;
-    padding: 0.5em 2em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: dodgerblue;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Warna biru */
     color: white;
-    border-radius: 4px;
-    cursor: pointer; /* Menambahkan kursor pointer */
-    transition: background 0.3s, transform 0.3s; /* Efek transisi */
-    margin: 20px 0; /* Jarak antara gambar dan tombol */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 0px; /* Jarak dari gambar */
 }
 
 button:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efek membesar saat hover */
 }
 
 button:active {
-    transform: translate(0em, 0.2em);
+    transform: translateY(2px); /* Efek menekan saat aktif */
 }
 
 /* Tombol WhatsApp */
@@ -54,22 +57,21 @@ button:active {
 }
 
 .whatsapp-button {
-    font-size: 17px;
-    padding: 0.5em 2em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: #00bbff; /* Warna hijau WhatsApp */
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
     color: white;
-    border-radius: 4px;
-    text-decoration: none; /* Menghapus garis bawah */
-    transition: background 0.3s, transform 0.3s; /* Efek transisi */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .whatsapp-button:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+    background-color: #1ebe57;
+    transform: scale(1.05); /* Efek membesar saat hover */
 }
 
 .whatsapp-button:active {
-    transform: translate(0em, 0.2em);
+    transform: translateY(2px); /* Efek menekan saat aktif */
 }
